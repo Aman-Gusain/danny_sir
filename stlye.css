@@ -203,6 +203,22 @@ button {
   padding: 10%;
 }
 
+.heading-image {
+  width: 40%;
+}
+
+.bottom-section-1 {
+  padding: 3% 0;
+  text-align: center;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~ Featured Section~~~~~~~~~~~~~~~~~*/
+
+footer h4 {
+  text-align: center;
+  padding: 3% 0;
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~ Media Query starts ~~~~~~~~~~~~~~~~~~~~~*/
 @media (max-width: 768px) {
   label.logo {

@@ -10,3 +10,7 @@ scroll.on('scroll', (position) => {
     $('nav').css('background', 'transparent');
   }
 });
+
+setTimeout(() => {
+  scroll.update();
+}, 1000);
