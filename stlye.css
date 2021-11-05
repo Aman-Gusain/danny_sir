@@ -1,0 +1,245 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*~~~~~~~~~~ Global setup ends ~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~ Nav Bar starts ~~~~~~~~~~~~~~~~~~~~~~*/
+nav {
+  background: transparent;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+label.logo {
+  color: cornsilk;
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 60px;
+  margin-left: 40px;
+}
+nav ul {
+  float: right;
+  margin-right: 50px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 60px;
+  margin: 0px 20px;
+}
+
+nav ul li a {
+  color: wheat;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bolder;
+}
+a.active,
+a:hover {
+  color: #44b3e2;
+  color: rgb(53, 52, 52);
+}
+.hamberger-btn {
+  font-size: 35px;
+  color: white;
+  float: right;
+  margin-right: 30px;
+  line-height: 60px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+/* ~~~~~~~~~~~~~~~~~~~~ Nav Bar ends ~~~~~~~~~~~~~~~~~~~~~*/
+
+button {
+  border: none;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~ Button ~~~~~~~~~~~~~~~~~~~~~*/
+
+.button {
+  padding: 15px 30px;
+  background: none;
+  cursor: pointer;
+  border: solid 1px black;
+  color: black;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 10px;
+  letter-spacing: 0.3rem;
+  cursor: pointer;
+}
+.button:hover {
+  transition: 0.4s;
+  transform: scale(0.9);
+}
+.top button {
+  color: white;
+  border: solid 1px white;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~ Top Section~~~~~~~~~~~~~~~~~*/
+
+.top {
+  height: 100vh;
+  color: black;
+  text-align: center;
+  background-image: url('https://themegoods-cdn-pzbycso8wng.stackpathdns.com/artale/wp-content/uploads/2021/02/tyler-nix-De3mbCIYyEE-unsplash.jpg');
+}
+.top-description {
+  position: relative;
+  top: 30%;
+}
+.top-description h1 {
+  font-weight: 900;
+  font-size: 5em;
+  margin-bottom: -0.1em;
+}
+.bordr {
+  border-left: solid 1px;
+  border-right: solid 1px;
+}
+.margin {
+  margin-top: 150px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~ Featured Section~~~~~~~~~~~~~~~~~*/
+
+.card {
+  border: none;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+.featured {
+  width: 80%;
+  margin: auto;
+}
+.featured h1 {
+  color: black;
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  margin-top: 10%;
+  /* margin-bottom: 10%; */
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~ Scrolling-text Section~~~~~~~~~~~~~~~~~*/
+.scrolling-text {
+  padding: 2% 0;
+}
+.scrolling-text h1 {
+  font-size: 60px;
+  text-align: center;
+}
+/* ~~~~~~~~~~~~~~~~~~~~ Featured Section~~~~~~~~~~~~~~~~~*/
+
+.portfolio {
+  background-color: #f6f6f4;
+  padding: 3% 0;
+}
+.portfolio button {
+  position: relative;
+  left: 80%;
+  top: 8px;
+}
+.containe {
+  display: flex;
+  overflow-x: auto;
+  padding: 8px;
+}
+.containe::-webkit-scrollbar {
+  display: none;
+}
+.containe .item {
+  padding: 3%;
+  margin: 8px;
+  transition: 0.3s all;
+}
+.containe .item:last-of-type {
+  margin-right: 8px;
+}
+.containe .item img {
+  height: 100%;
+  width: 300px;
+  border-radius: 3px;
+  cursor: pointer;
+  filter: contrast(90%);
+  transition: 0.3s all;
+}
+.containe .item img:hover {
+  filter: contrast(100%);
+}
+.containe .item:hover {
+  transform: translateY(-4px);
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~ Featured Section~~~~~~~~~~~~~~~~~*/
+
+.bottom {
+  padding: 3% 0;
+}
+.featured-image {
+  width: 90%;
+}
+
+.featured-section {
+  width: 80%;
+  margin: auto;
+  background-color: #f6f6f4;
+}
+
+.product-text {
+  margin: auto;
+  border: solid 1px black;
+  width: 80%;
+  margin-top: 20%;
+  text-align: center;
+  padding: 10%;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~ Media Query starts ~~~~~~~~~~~~~~~~~~~~~*/
+@media (max-width: 768px) {
+  label.logo {
+    font-size: 30px;
+    margin-left: 20px;
+  }
+  nav ul li a {
+    color: white;
+    font-size: 16px;
+  }
+  .hamberger-btn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 40%;
+    height: 100vh;
+    background: #ffffff;
+    top: 0px;
+    right: 100%;
+    margin-right: 65% !important;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+  }
+  a:hover {
+    background: linear-gradient(
+      93deg,
+      rgba(94, 129, 207, 1) 16%,
+      rgba(94, 161, 187, 1) 55%
+    );
+  }
+
+  #check:checked ~ ul {
+    right: -10px;
+    z-index: 100;
+  }
+}
